@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Produtos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Cadastro de Produtos</h1>
+
+        <!-- Formulário de cadastro -->
+        <form id="formProduto">
+
+            <div class="campo">
+
+                <label for="nome">
+                    Nome do produto
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite o nome do produto"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="preco">
+                    Preço
+                </label>
+
+                <input
+                    type="number"
+                    id="preco"
+                    step="0.01"
+                    min="0"
+                    placeholder="0.00"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="quantidade">
+                    Quantidade
+                </label>
+
+                <input
+                    type="number"
+                    id="quantidade"
+                    min="0"
+                    placeholder="Digite a quantidade"
+                >
+
+            </div>
+
+
+            <button type="submit">
+                Cadastrar Produto
+            </button>
+
+        </form>
+
+
+        <!-- Mensagens de sucesso ou erro -->
+        <p id="mensagem"></p>
+
+
+        <h2>
+            Produtos cadastrados
+        </h2>
+
+
+        <!-- Tabela -->
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Produto</th>
+
+                    <th>Preço</th>
+
+                    <th>Quantidade</th>
+
+                    <th>Ações</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="tabelaProdutos">
+
+                <!-- Os produtos serão adicionados pelo JavaScript -->
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
